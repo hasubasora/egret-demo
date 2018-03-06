@@ -9,14 +9,14 @@ class HitTestPoint extends egret.DisplayObjectContainer{
 			var sp:egret.Shape =new egret.Shape();
 			sp.graphics.beginFill(0x7cff46);
 			// sp.graphics.drawRect(0,0,100,100);
-			sp.graphics.drawCircle(0,0,100);
+			sp.graphics.drawCircle(0,0,100); 
 			// sp.y=100;
 			// sp.x=100;
 			sp.graphics.endFill();
 			this.addChild(sp);
 			//碰撞检测 1
 			// var isHit:boolean=sp.hitTestPoint(10,10);
-			//碰撞检测 2
+			//碰撞检测 2  圆形半径是100 检测的是70 坐标重合 超过100就是没碰撞
 			var isHit:boolean=sp.hitTestPoint(70,70,true);
 			this.infoText.text="碰撞检测"+isHit;
 		

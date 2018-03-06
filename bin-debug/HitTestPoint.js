@@ -27,7 +27,7 @@ var HitTestPoint = (function (_super) {
         this.addChild(sp);
         //碰撞检测 1
         // var isHit:boolean=sp.hitTestPoint(10,10);
-        //碰撞检测 2
+        //碰撞检测 2  圆形半径是100 检测的是70 坐标重合 超过100就是没碰撞
         var isHit = sp.hitTestPoint(70, 70, true);
         this.infoText.text = "碰撞检测" + isHit;
         /**

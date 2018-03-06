@@ -40,6 +40,18 @@ var DisplayObject = (function (_super) {
         //可见否
         sp.visible = true;
         this.addChild(sp);
+        /**
+         * DisplayObject 显示对象基类，所有显示对象继承自盖磊
+         *  有四个派生类
+         *  - DisplayObjectContainer
+         *   - Bitmap 位图显示操作
+         *   - Shape 矢量图绘制的显示对象
+         *   - TextField 和 TextInput 文本操作
+         *  - Sprite
+         *   - Stage
+         *   - MovieClip
+         *   - Bitmap Text
+         */
     };
     return DisplayObject;
 }(egret.DisplayObjectContainer));
