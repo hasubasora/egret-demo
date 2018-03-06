@@ -1,0 +1,22 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/promise/promise.js"
+	],
+	"game": [
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/CardMain.js",
+		"bin-debug/DisplayObject.js",
+		"bin-debug/HitTestPoint.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/Main.js",
+		"bin-debug/Mask.js",
+		"bin-debug/MyCard.js",
+		"bin-debug/Platform.js",
+		"bin-debug/ThemeAdapter.js"
+	]
+}
