@@ -8,12 +8,13 @@
 		"libs/modules/promise/promise.js"
 	],
 	"game": [
+		"bin-debug/LoadingUI.js",
 		"bin-debug/AnchorText.js",
-		"bin-debug/AssetAdapter.js",
 		"bin-debug/CardMain.js",
+		"bin-debug/ChildrenObject.js",
 		"bin-debug/DisplayObject.js",
 		"bin-debug/HitTestPoint.js",
-		"bin-debug/LoadingUI.js",
+		"bin-debug/AssetAdapter.js",
 		"bin-debug/Main.js",
 		"bin-debug/ManageMent.js",
 		"bin-debug/Mask.js",

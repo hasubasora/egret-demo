@@ -16,8 +16,8 @@ var ManageMent = (function (_super) {
         return _this;
     }
     ManageMent.prototype.addToManageMent = function () {
-        var sprcon = new egret.Sprite();
-        this.addChild(sprcon);
+        var sprcon = new egret.Sprite(); //创建一个矢量图容器
+        this.addChild(sprcon); //先添加进舞台
         sprcon.x = 10;
         for (var i = 0; i < 4; i++) {
             var spr = new egret.Sprite();
@@ -29,11 +29,20 @@ var ManageMent = (function (_super) {
         }
         var sprNew = new egret.Sprite();
         sprNew.graphics.beginFill(0xff0000 * Math.random());
-        sprNew.graphics.drawRect(0, 0, 100, 100);
+        sprNew.graphics.drawRect(0, 0, 150, 150);
         sprNew.graphics.endFill();
         sprNew.x = 10;
         sprNew.y = 10;
         sprcon.addChild(sprNew);
+        sprcon.addChildAt(sprNew, 3); //插入容器层级
+        /**
+         * 容器.swapChildren(显示对象，显示对象)
+         * 容器.swapChildrenAt(深度值，深度值)
+         * 容器.setChildIndex(显示对象，新的深度值)
+         */
+        /**
+         * 访问容器子对象
+         */
     };
     return ManageMent;
 }(egret.DisplayObjectContainer));
